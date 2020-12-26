@@ -18,7 +18,7 @@ recommendation system based on similarity of users and article popularity
 - SVD only works with a dense matrix, no missing value, otherwise, we need to approximate U, S, VT using *FunkSVD* algorithm 
 
 # Result:
-- the accuracy is high (>99%) but it is more likely as the antifacts of memorization, in which the matrics from SVD is optimized for a single use
+- the accuracy is high (>99%) but it is more likely as the antifacts of memorization, in which the matrics from SVD is optimized for a single use. Note that, the value in matrix is mostly zeros or imbalanced class so the high accuracy prediction is biased.
 - the noise when introducing more *latent feature* reduces (slightly) accuracy of *testing data*
 <p>
   <img src='testing.png'>
